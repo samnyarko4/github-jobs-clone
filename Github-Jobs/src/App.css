@@ -1,0 +1,296 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* -------------------------------------------------------------------
+LOADING SYMBOL
+
+
+------------------------------------------------------------ */
+
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  
+  & .path {
+    stroke: hsl(0, 0%, 0%);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+/* ----------------------------------------------------------
+
+-----------------------------------------------------------------*/
+
+.title{
+font-size: 24px;
+margin-bottom: 32px;
+font-weight:700 ;
+}
+
+.title-jobs{
+font-weight: 300 ;
+}
+
+.img-placehold{
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+.search-section{
+ 
+  width: 1301px;
+  height: 138px;
+  background-image: url('./assets/backgroundImg.png');
+  border-radius: 8px;
+}
+.search-bar{
+  margin: 0 auto;
+  width: max-content;
+  background-color: aliceblue;
+}
+
+.search-btn{
+  width: 146px;
+  height: 47px;
+  margin-right: 4px;
+  color: white !important;
+}
+
+.contain{
+  display:grid;
+  grid-template-columns: 423px 880px;
+  grid-template-rows: max-content max-content max-content;
+}
+
+input.searchbar {
+  background-color: aliceblue;
+  width: 790px;
+  height: 55px;
+}
+
+input.checkbox{
+width: 18px;
+margin-right: 12px;
+}
+
+.location-search{
+  width: 379px;
+  height:48px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 0px 2px  ;
+}
+
+.location-form{
+  margin-top: 26px;
+}
+
+.location-form span{
+margin-left: 12px;
+margin-bottom: 15.6px;
+}
+
+.location-form span input{
+  height: 18px;
+  width: 18px;
+  margin-right: 12.5px;
+}
+
+.sidebar{
+  margin-right:32px;
+  margin-left: 12px;
+  padding-top:44px ;
+}
+
+.location-title{
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+
+.right-side{
+  margin-top: 42px;
+  
+}
+
+.comp-img{
+  width: 90px;
+  height: 90px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+.cards-grid{
+  row-gap: 32px;
+  max-height: 740px;
+  overflow: auto;
+  
+}
+
+.card{
+  width: 790px;
+  height: 114px;
+}
+
+
+.card{
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 0px 2px  ;
+  border-radius: 4px;
+}
+
+.card-grid{
+  grid-template-columns: max-content 685px;
+  height: 90px;
+  margin-top: 12px;
+}
+
+.company-name{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.06px;
+  margin-left: 16px;
+}
+
+.job-title{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  margin-left: 16px;
+}
+
+.job-ft-pt{
+  height: fit-content;
+  margin-left: 16px;
+  margin-top: 10px;
+font-size: 12px;
+font-weight: 700;
+padding: 6px 8px 6px 8px;
+border: 1px solid rgba(51, 70, 128, 1);
+border-radius: 4px;
+}
+
+.clock-icon{
+  margin-left:27px;
+  margin-right: 12px;
+  color:rgba(183, 188, 206, 1) ;
+  margin-top: 10px;
+}
+.clock-icon i{
+margin-right: 7px;
+}
+
+.location-icon{
+  color:rgba(183, 188, 206, 1) ;
+  margin-top: 10px;
+}
+
+.location-icon i{
+  margin-right:7px ;
+}
+
+
+
+.details-grid{
+  grid-template-columns: 30% 70%;
+}
+
+button.details-back{
+  background-color: none !important;
+  color: #1E86FF;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.back-icon{
+  margin-right: 12px;
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+}
+
+.how-to-apply{
+  margin-top: 34px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #B9BDCF;
+}
+
+.details-title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  
+}
+
+.clock-icon-detail , .clock-icon-detail i{
+
+    margin-right: 7px;
+    color:#B7BCCE;
+    margin-top: 10px;
+}
+
+.job-ft-pt-detail{
+  height: fit-content;
+  margin-left: 16px;
+font-size: 12px;
+font-weight: 700;
+padding: 6px 8px 6px 8px;
+border: 1px solid rgba(51, 70, 128, 1);
+border-radius: 4px;
+}
+
+.comp-grid{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content max-content;
+}
+
+.comp-img-detail{
+  height: 42px;
+  width: 42px;
+}
+
+.comp-title-detail{
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.location-icon-detail{
+  color:rgba(183, 188, 206, 1) ;
+}
+
+.details-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
